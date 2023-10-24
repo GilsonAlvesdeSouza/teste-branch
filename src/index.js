@@ -9,7 +9,8 @@ app.get("/", (req, resp) => {
 });
 
 app.get("/nomes", (req, resp) => {
-  resp.json({ ok: "Renata, Rafaela, Gilson" });
+  const nomes = ["Pedro", "Paula", "Ana", "Maria"];
+  resp.json(nomes);
 });
 
 app.get("/produtos", (req, resp) => {
