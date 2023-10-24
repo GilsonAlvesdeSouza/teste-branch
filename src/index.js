@@ -8,9 +8,9 @@ app.get("/", (req, resp) => {
   resp.json({ ok: "true" });
 });
 
-app.get("/numeros", (req, resp) => {
-  const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  resp.json({ numeros });
+app.get("/nomes", (req, resp) => {
+  const nomes = ["Pedro", "Paula", "Ana", "Maria"];
+  resp.json(nomes);
 });
 
 app.get("/produtos", (req, resp) => {
