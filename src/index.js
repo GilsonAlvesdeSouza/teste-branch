@@ -1,5 +1,5 @@
 const express = require("express");
-
+const produtos = require("../produtos");
 const app = express();
 
 app.use(express.json());
@@ -10,6 +10,10 @@ app.get("/", (req, resp) => {
 
 app.get("/nomes", (req, resp) => {
   resp.json({ ok: "Renata, Rafaela" });
+});
+
+app.get("/produtos", (req, resp) => {
+  resp.json(produtos);
 });
 
 app.listen(3000, () => {
