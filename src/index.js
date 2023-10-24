@@ -9,7 +9,7 @@ app.get("/", (req, resp) => {
 });
 
 app.get("/nomes", (req, resp) => {
-  resp.json({ ok: "Renata, Rafaela" });
+  resp.json({ ok: "Renata, Rafaela, Gilson" });
 });
 
 app.get("/produtos", (req, resp) => {
